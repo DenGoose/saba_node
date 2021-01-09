@@ -19,17 +19,11 @@ function caesar(word, amount) {
             }
         }
         output += c;
-        console.log(amount + " key");
-        console.log(word[i].charCodeAt());
-        console.log('-');
-        console.log(c.charCodeAt());
     }
     return output;
 };
 
 form.addEventListener('submit', (e) => {
-    // console.log(caesar(key.value, word.value))
-    out.innerHTML = caesar(key.value, word.value)
-    // out.innerHTML = 'qwe'
+    out.innerHTML = caesar(word.value, key.value)
     e.preventDefault()
 })
