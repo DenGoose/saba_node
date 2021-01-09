@@ -1,17 +1,34 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+    <title>Шифрование Цезарем</title>
 </head>
-<body>
+
+<body style="margin-left: 10px; margin-top: 10px;">
+    <h4 class="font-weight-bold">Шифрование методом Цезаря</h4>
     <form id="form">
-        <input type="text" id="word" placeholder="фраза">
-        <input type="text" id="key" placeholder="ключ">
-        <input type="submit">
+        <div class="form-group">
+            <input type="text" id="word" placeholder="Фраза" class="form-control w-25 p-3">
+        </div>
+        <div class="form-group">
+            <input type="text" id="key" placeholder="Ключ" class="form-control w-25 p-3">
+        </div>
+        <p class="font-weight-light">Используйте англиские буквы и без пробелов</p>
+        <input type="submit" class="btn btn-dark">
     </form>
-    <div id="out" style="margin-top: 50px;"></div>
+    <div class="form-group" style="margin-top: 50px;">
+        <input id="out" class="form-control w-25 p-3" placeholder="Криптограмма">
+    </div>
     <script src="script.js"></script>
+
+    <!-- js for bootstrap -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+    </script>
 </body>
+
 </html>

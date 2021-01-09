@@ -24,6 +24,6 @@ function caesar(word, amount) {
 };
 
 form.addEventListener('submit', (e) => {
-    out.innerHTML = caesar(word.value, key.value)
+    out.value = caesar(word.value, key.value)
     e.preventDefault()
 })
